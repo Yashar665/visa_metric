@@ -3,8 +3,6 @@
 # pip install time
 # pip install re
 
-python -m pip install selenium
-
 import selenium
 import requests
 import time
