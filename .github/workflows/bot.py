@@ -1,16 +1,10 @@
-# pip install selenium
-# pip install requests
-# pip install time
-# pip install re
-
 import selenium
 import requests
 import time
 import re
-# from selenium import webdriver
+
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-# from webdriver_manager.chrome import ChromeDriverManager
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
