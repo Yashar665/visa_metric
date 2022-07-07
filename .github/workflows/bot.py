@@ -22,6 +22,7 @@ while True:
     driver_path = ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install()
     driver = webdriver.Chrome(driver_path)
     driver.get("https://appointment.visametric.com/")
+    time.sleep(5)
     elem = driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/form/div[1]/select")
     elem.send_keys("Azerbaijan")
     elem = driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/form/div[2]/select")
@@ -49,4 +50,4 @@ while True:
     message = 'Earliest date available: ' + date
     driver.close()
     requests.get("https://api.telegram.org/bot5482974644:AAGih1XSlgkKiyeHG-4iP357wFMVTvw_vQ8/sendMessage?chat_id=-681523419&text=" + message)
-#     time.sleep(3600)
+    time.sleep(10800)
