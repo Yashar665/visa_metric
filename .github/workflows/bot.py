@@ -10,6 +10,10 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.utils import ChromeType
 
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(800, 800))  
+display.start()
+
 driver_path = ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install()
 driver = webdriver.Chrome(driver_path)
 driver.close()
