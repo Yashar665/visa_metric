@@ -26,8 +26,8 @@ jobs:
       - name: install webdriver_manager
         run: pip install webdriver_manager
         
-      - name: webdriver_manager.utils
-        run: pip install webdriver_manager.utils
+      - name: webdriver-manager
+        run: pip install webdriver-manager
         
 #       - name: install chromium
 #         run: pip install chromium-browser
