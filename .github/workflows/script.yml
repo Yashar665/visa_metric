@@ -20,8 +20,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: install libraries
+      - name: install selenium
         run: pip install selenium
+      
+      - name: install webdriver_manager.chrome
+        run: pip install webdriver_manager.chrome
 
       # Runs a single command using the runners shell
       - name: Run a Python script
