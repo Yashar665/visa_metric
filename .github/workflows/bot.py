@@ -22,7 +22,7 @@ while True:
     driver_path = ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install()
     driver = webdriver.Chrome(driver_path)
     time.sleep(5)
-    elem = driver.find_element(By.CLASS_NAME, "form-control")
+    elem = driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/form/div[1]/select")
     elem.send_keys("Azerbaijan")
     elem = driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/form/div[2]/select")
     elem.send_keys("Germany")
