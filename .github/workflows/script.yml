@@ -28,6 +28,9 @@ jobs:
         
       - name: webdriver-manager
         run: pip install webdriver-manager
+      
+      - name: pyvirtualdisplay
+        run: pip install pyvirtualdisplay
         
 #       - name: install chromium
 #         run: pip install chromium-browser
