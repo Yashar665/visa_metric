@@ -10,7 +10,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.utils import ChromeType
 
-driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
+driver_path = ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install()
 driver = webdriver.Chrome(driver_path)
 driver.close()
 
