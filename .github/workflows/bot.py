@@ -1,3 +1,8 @@
+!pip install selenium
+!pip install requests
+!pip install time
+!pip install re
+
 import selenium
 import requests
 import time
