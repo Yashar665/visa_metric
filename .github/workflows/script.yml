@@ -25,6 +25,9 @@ jobs:
       
       - name: install webdriver_manager
         run: pip install webdriver_manager
+        
+      - name: install chromium
+        run: pip install chromium-browser
 
       # Runs a single command using the runners shell
       - name: Run a Python script
