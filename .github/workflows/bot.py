@@ -19,7 +19,7 @@ display.start()
 # driver.close()
 
 while True:
-    driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
+    driver_path = ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install()
     driver = webdriver.Chrome(driver_path)
     time.sleep(5)
     elem = driver.find_element(By.CLASS_NAME, "form-control")
