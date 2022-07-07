@@ -22,8 +22,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a Python script
-        run:
-          python -m pip install selenium
-          python .github/workflows/bot.py
+      - run: python -m pip install selenium
+      - run: python .github/workflows/bot.py
+          
+          
 
 
