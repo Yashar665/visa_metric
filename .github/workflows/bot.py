@@ -13,7 +13,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 while True:
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome()
     driver.get("https://appointment.visametric.com/")
     time.sleep(5)
     elem = driver.find_element(By.CLASS_NAME, "form-control")
