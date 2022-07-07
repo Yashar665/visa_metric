@@ -23,8 +23,8 @@ jobs:
       - name: install selenium
         run: pip install selenium
       
-#       - name: install webdriver_manager.chrome
-#         run: pip install webdriver_manager.chrome
+      - name: install webdriver_manager
+        run: pip install webdriver_manager
 
       # Runs a single command using the runners shell
       - name: Run a Python script
