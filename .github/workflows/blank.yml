@@ -19,12 +19,12 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run Script and Update Plot
         run: |
-          jupyter nbconvert --to script weather_locations.ipynb
+          jupyter nbconvert --to script visa metric with telegram bot.ipynb
           python weather_locations.py
       - name: Commit and Push Changes
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "yasharnasibov95@gmail.com"
+          git config --local user.name "Yashar665"
           git add weather_locations.csv weather_locations.png
           git commit -m "Updated plot on `date` with GitHub Actions"
           git push origin master
