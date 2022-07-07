@@ -46,8 +46,17 @@ while True:
     elem = driver.find_element(By.CLASS_NAME, "list-group")
     elem_text = elem.text
     text_char = [m.start() for m in re.finditer('\n', elem_text)]
-    date = elem_text[0:text_char[-1]]
-    message = 'Earliest date available: ' + date
+    if 'date' in set(dir()) - set(dir(__builtins__)):
+        if elem_text[0:text_char[-1]] != date:
+            date = elem_text[0:text_char[-1]]
+            message = 'Earliest date available: ' + date
+            requests.get("https://api.telegram.org/bot5482974644:AAGih1XSlgkKiyeHG-4iP357wFMVTvw_vQ8/sendMessage?chat_id=-681523419&text=" + message)
+        else:
+            pass
+    else:
+        date = elem_text[0:text_char[-1]]
+        message = 'Earliest date available: ' + date
+        requests.get("https://api.telegram.org/bot5482974644:AAGih1XSlgkKiyeHG-4iP357wFMVTvw_vQ8/sendMessage?chat_id=-681523419&text=" + message)
     driver.close()
-    requests.get("https://api.telegram.org/bot5482974644:AAGih1XSlgkKiyeHG-4iP357wFMVTvw_vQ8/sendMessage?chat_id=-681523419&text=" + message)
-    time.sleep(10800)
+    
+    time.sleep(300)
