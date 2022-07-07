@@ -8,13 +8,12 @@ from selenium.webdriver.common.by import By
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.utils import ChromeType
+# from webdriver_manager.utils import ChromeType
 
 
 
 while True:
-    driver_path = ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
-    driver = webdriver.Chrome(driver_path)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get("https://appointment.visametric.com/")
     time.sleep(5)
     elem = driver.find_element(By.CLASS_NAME, "form-control")
