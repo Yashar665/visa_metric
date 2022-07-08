@@ -59,4 +59,4 @@ while True:
         requests.get("https://api.telegram.org/bot5482974644:AAGih1XSlgkKiyeHG-4iP357wFMVTvw_vQ8/sendMessage?chat_id=-681523419&text=" + message)
     driver.close()
     
-    time.sleep(300)
+    time.sleep(120)
