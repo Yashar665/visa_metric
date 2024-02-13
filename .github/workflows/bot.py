@@ -8,6 +8,7 @@ from selenium.webdriver.common.by import By
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 # from webdriver_manager.core.utils import ChromeType
 
 from pyvirtualdisplay import Display
@@ -21,7 +22,7 @@ display.start()
 while True:
     # driver_path = ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install()
     # driver = webdriver.Chrome(driver_path)
-
+    
     option = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=option)
     
