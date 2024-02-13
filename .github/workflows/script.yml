@@ -29,7 +29,8 @@ jobs:
 #         run: pip install webdriver_manager
         
       - name: webdriver-manager
-        run: pip install webdriver-manager
+        #run: pip install webdriver-manager
+        run: pip install --upgrade webdriver-manager
       
       - name: pyvirtualdisplay
         run: pip install pyvirtualdisplay
