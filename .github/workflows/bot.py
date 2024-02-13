@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.utils import ChromeType
+# from webdriver_manager.core.utils import ChromeType
 
 from pyvirtualdisplay import Display
 display = Display(visible=0, size=(800, 800))  
